@@ -1,13 +1,18 @@
 const path = require('path');
 
 module.exports = {
-  entry: './main.js',
+  entry: './app/main',
   mode: 'development',
   output: {
     path: __dirname,
     filename: './public/bundle.js',
   },
   devtool: 'source-map',
+  devServer: {
+    contentBase: path.join(__dirname, '/public'),
+    compress: true,
+    port: 8080,
+  },
   module: {
     rules: [
       {

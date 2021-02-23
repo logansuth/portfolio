@@ -4,7 +4,8 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -w & webpack serve"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,8 @@
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
     "webpack": "^5.23.0",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "react": "^17.0.1",
