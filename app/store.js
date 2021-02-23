@@ -11,9 +11,9 @@ function dummyReducer(state = {}, action) {
 export default createStore(
   dummyReducer,
   composeWithDevTools(
-    applyMiddleware([
+    applyMiddleware(
       thunkMiddleware.withExtraArgument({ axios }),
-      createLogger({ collapsed: true }),
-    ])
+      createLogger()
+    )
   )
 );
