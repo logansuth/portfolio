@@ -1,18 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: './app/main',
+  entry: './app/main.js', // assumes your entry point is the index.js in the root of your project folder
   mode: 'development',
   output: {
-    path: __dirname,
-    filename: './public/bundle.js',
+    path: __dirname, // assumes your bundle.js will also be in the root of your project folder
+    filename: 'bundle.js',
   },
   devtool: 'source-map',
-  devServer: {
-    contentBase: path.join(__dirname, '/public'),
-    compress: true,
-    port: 8080,
-  },
   module: {
     rules: [
       {
@@ -21,10 +16,6 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
       },
     ],
   },
