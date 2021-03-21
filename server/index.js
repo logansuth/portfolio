@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-const pimpinmyroutes = require('pimpinmyroutes');
 const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
@@ -14,7 +13,6 @@ const dbStore = new SequelizeStore({ db: db });
 dbStore.sync();
 
 // Logging middleware
-app.use(pimpinmyroutes);
 app.use(morgan('dev'));
 
 // Body parsing middleware
