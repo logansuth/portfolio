@@ -1,1 +1,1 @@
-A minimal Node, Express, React, Sequelize + PostgreSQL boilerplate
+Logan's personal portfolio site
