@@ -1,1 +1,1 @@
-Logan's personal portfolio site
+Logan Sutherland's personal portfolio site
