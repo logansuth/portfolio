@@ -1,7 +1,12 @@
 node_modules
+
+
+#compiled
+style.css.map
 bundle.js
 bundle.js.map
 package-lock.json
 
 # OSX
 .DS_Store
+
