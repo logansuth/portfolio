@@ -1,3 +1,6 @@
-img {
-  width: 200px;
+@charset "utf-8";
+@import '../node_modules/bulma/bulma.sass';
+
+.headshot {
+  width: 25%;
 }

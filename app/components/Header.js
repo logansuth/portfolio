@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const Header = (props) => {
-  return <img src="images/circle-cropped.png" />;
+  return <img className="image headshot" src="images/circle-cropped.png" />;
 };
